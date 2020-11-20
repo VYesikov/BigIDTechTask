@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+apply plugin: "application"
+mainClassName = "Run"
+
+applicationDefaultJvmArgs = ['--add-opens', 'java.base/java.lang=ALL-UNNAMED']
+
+group 'org.techtask'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.projectlombok:lombok:1.18.12",
+            "com.google.inject:guice:4.2.3",
+            "org.apache.commons:commons-lang3:3.0",
+            "org.apache.logging.log4j:log4j-core:2.14.0"
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+}
