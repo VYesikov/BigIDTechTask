@@ -5,7 +5,7 @@
         I. Input: num of identities to create. Output: lines with personal data (comma separated), 
         E.g. user@company.com, Moshe, Cohen, New York, Israel, 987345712
 
-##Run
+## Run
     Command line -> Navigate to root directory. There is build.gradle file. -> Execute command: gradle run
 
 ## TechStack
